@@ -7,7 +7,7 @@ fi
 brew install --build-bottle qt5 --with-qtwebkit
 brew bottle qt5
 
-cp `brew formula qt5` Formula/
+brew cat qt5 > Formula/qt5.rb
 
 echo
 echo "#### IMPORTANT INFORMATION FOLLOWING! "

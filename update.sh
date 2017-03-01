@@ -17,11 +17,11 @@ echo "##"
 echo "#### See below on how to use this."
 echo
 
-cat < <<EOF
+cat <<EOF
 Update the 'bottle' section in 'Formula/qt5.rb' like so, but with the correct sha256sum (see above) and the correct version (again, see above)
 
   bottle do
-    root_url "https://github.com/ninech/homebrew-qt/releases/download/vX.X.X"
+    root_url "https://github.com/ninech/homebrew-qt/releases/download/vX.X.X_1"
     rebuild 1
     sha256 "2d54c0c0db8548e63134250950f9ac69d9ae52c101e397a1c1230d31bf3731ef" => :sierra
   end

@@ -23,3 +23,8 @@ And you're good to go.
 ### It can't find `cmake`
 
 You did not read the homebrew caveats then. Run `brew info qt5` to read them again.
+
+## Updating the bottle
+
+Clone this repository and run `./update.sh`.
+It will tell you what to do.

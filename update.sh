@@ -4,21 +4,21 @@ if [ ! hash brew 2>/dev/null ]; then
   echo "Please install brew: https://brew.sh"
 fi
 
-brew install --build-bottle qt5 --with-qtwebkit
-brew bottle qt5
+brew install --build-bottle qt --with-qtwebkit
+brew bottle qt
 
-brew cat qt5 > Formula/qt5.rb
+brew cat qt > Formula/qt.rb
 
 echo
 echo "#### IMPORTANT INFORMATION FOLLOWING! "
 echo "##"
-echo "## $(sha256sum --tag $(ls -t qt5* | head -n 1)) "
+echo "## $(sha256sum --tag $(ls -t qt* | head -n 1)) "
 echo "##"
 echo "#### See below on how to use this."
 echo
 
 cat <<EOF
-Update the 'bottle' section in 'Formula/qt5.rb' like so, but with the correct sha256sum (see above) and the correct version (again, see above)
+Update the 'bottle' section in 'Formula/qt.rb' like so, but with the correct sha256sum (see above) and the correct version (again, see above)
 
   bottle do
     root_url "https://github.com/ninech/homebrew-qt/releases/download/vX.X.X_1"

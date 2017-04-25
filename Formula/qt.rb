@@ -23,8 +23,8 @@ class Qt < Formula
 
   bottle do
     root_url "https://github.com/ninech/homebrew-qt/releases/download/v5.8.0_2"
-    rebuild 1
-    sha256 "b55dbf8e548ec7dabd5ef3c2256c14098414ecb741e036380e43ef68ef1c35ce" => :sierra
+    rebuild 2
+    sha256 "9de7c2969fbd09c8eb2de1c5285067c7dfdbb2f12cc3866f0475328eb627736f" => :sierra
   end
 
   keg_only "Qt 5 has CMake issues when linked"

@@ -3,28 +3,15 @@
 class Qt < Formula
   desc "Cross-platform application and UI framework"
   homepage "https://www.qt.io/"
-  revision 2
+  url "https://download.qt.io/official_releases/qt/5.9/5.9.0/single/qt-everywhere-opensource-src-5.9.0.tar.xz"
+  mirror "https://www.mirrorservice.org/sites/download.qt-project.org/official_releases/qt/5.9/5.9.0/single/qt-everywhere-opensource-src-5.9.0.tar.xz"
+  sha256 "f70b5c66161191489fc13c7b7eb69bf9df3881596b183e7f6d94305a39837517"
   head "https://code.qt.io/qt/qt5.git", :branch => "5.8", :shallow => false
 
-  stable do
-    url "https://download.qt.io/official_releases/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz"
-    mirror "https://www.mirrorservice.org/sites/download.qt-project.org/official_releases/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz"
-    sha256 "0f4c54386d3dbac0606a936a7145cebb7b94b0ca2d29bc001ea49642984824b6"
-
-    # Upstream issue "Qt5.8: macOS, designer examples fails to compile"
-    # Reported 15 Dec 2016 https://bugreports.qt.io/browse/QTBUG-57656
-    # Upstream PR from 31 Jan 2017 "fix installation of header-only frameworks"
-    # See https://codereview.qt-project.org/#/c/184053/1
-    patch do
-      url "https://raw.githubusercontent.com/Homebrew/formula-patches/634a19fb/qt5/QTBUG-57656.patch"
-      sha256 "a69fc727f4378dbe0cf05ecf6e633769fe7ee6ea52b1630135a05d5adfa23d87"
-    end
-  end
-
   bottle do
-    root_url "https://github.com/ninech/homebrew-qt/releases/download/v5.8.0_2"
-    rebuild 2
-    sha256 "9de7c2969fbd09c8eb2de1c5285067c7dfdbb2f12cc3866f0475328eb627736f" => :sierra
+    root_url "https://github.com/ninech/homebrew-qt/releases/download/vX.X.X_1"
+    rebuild 1
+    sha256 "aa4c9d4267be8b3705d4d166d2e8dfcf84882a7932162265405bfdf2b4771d60" => :sierra
   end
 
   keg_only "Qt 5 has CMake issues when linked"
@@ -45,8 +32,8 @@ class Qt < Formula
 
   # http://lists.qt-project.org/pipermail/development/2016-March/025358.html
   resource "qt-webkit" do
-    url "https://download.qt.io/community_releases/5.8/5.8.0-final/qtwebkit-opensource-src-5.8.0.tar.xz"
-    sha256 "79ae8660086bf92ffb0008b17566270e6477c8fa0daf9bb3ac29404fb5911bec"
+    url "https://download.qt.io/community_releases/5.9/5.9.0-final/qtwebkit-opensource-src-5.9.0.tar.xz"
+    sha256 "8dad193b740055a998312e04a040f2e32a923c0823b2d239b24eab08276a4e04"
   end
 
   # Restore `.pc` files for framework-based build of Qt 5 on OS X. This

@@ -4,6 +4,7 @@ if [ ! hash brew 2>/dev/null ]; then
   echo "Please install brew: https://brew.sh"
 fi
 
+brew remove qt
 brew install --build-bottle qt --with-qtwebkit
 brew bottle qt
 

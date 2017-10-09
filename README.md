@@ -28,3 +28,9 @@ You did not read the homebrew caveats then. Run `brew info qt` to read them agai
 
 Clone this repository and run `./update.sh`.
 It will tell you what to do.
+
+## About
+
+This tap is currently maintained and funded by [nine](https://nine.ch).
+
+[![logo of the company 'nine'](https://logo.apps.at-nine.ch/Dmqied_eSaoBMQwk3vVgn4UIgDo=/trim/500x0/logo_claim.png)](https://www.nine.ch)

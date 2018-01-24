@@ -27,8 +27,8 @@ class Qt < Formula
 
   depends_on "pkg-config" => :build
   depends_on :xcode => :build
-  depends_on :mysql => :optional
-  depends_on :postgresql => :optional
+  depends_on 'mysql' => :optional
+  depends_on 'postgresql' => :optional
 
   # http://lists.qt-project.org/pipermail/development/2016-March/025358.html
   resource "qt-webkit" do

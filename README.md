@@ -1,3 +1,7 @@
+**Not Maintained**
+
+This project is no longer maintained, as the default bottle now contains the webkit parts as well.
+
 # homebrew-qt
 `brew install qt --with-qtwebkit` as bottle
 
@@ -31,6 +35,6 @@ It will tell you what to do.
 
 ## About
 
-This tap is currently maintained and funded by [nine](https://nine.ch).
+This tap was made and funded by [nine](https://nine.ch).
 
 [![logo of the company 'nine'](https://logo.apps.at-nine.ch/Dmqied_eSaoBMQwk3vVgn4UIgDo=/trim/500x0/logo_claim.png)](https://www.nine.ch)
